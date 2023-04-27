@@ -6,24 +6,26 @@
 
 #include<iostream>
 
-#include "rhoumbus.h"
+#include "rhombus.h"
 
 int main() 
 {
 
 	//test variables
-	int dH1;
-	int dV1;
+	float dH1;
+	float dV1;
 
-	int dH2;
-	int dV2;
+	float dH2;
+	float dV2;
+
+	float side;
 
 	float P;
 	float A;
 
-	Rhoumbus objA;
-	Rhoumbus objB(4, 8);
-	Rhoumbus objC = objB;
+	Rhombus objA;
+	Rhombus objB(4, 8);
+	Rhombus objC = objB;
 
 	objA.SetDim(5, 10);
 
@@ -34,6 +36,7 @@ int main()
 	dH1 = objA.GetHorD();
 	dV1 = objA.GetVerD();
 	objA.GetDim(dH2, dV2);
+	side = objA.GetSide();
 
 	if (objC == objA) 
 	{
